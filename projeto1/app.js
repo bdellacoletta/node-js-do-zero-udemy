@@ -6,6 +6,7 @@ var chave_pix = 12345678;
 var valor_em_conta = 100;
 
 function mostrar_dados(){
+  console.clear();
   console.log("---------------------------");
   console.log("Nome: " + nome);
   console.log("---------------------------");
@@ -18,16 +19,19 @@ function mostrar_dados(){
 }
 
 function add_valor(valor) {
+  console.clear();
   valor_em_conta += valor;
   console.log(`valor em conta: R$ ${valor_em_conta}`);
 }
 
 function sub_valor(valor) {
+  console.clear();
   valor_em_conta -= valor;
   console.log(`valor em conta: R$ ${valor_em_conta}`);
 }
 
 function mudar_chave(chave) {
+  console.clear();
   chave_pix = chave;
   console.log(`Nova chave pix: ${chave_pix}`);
 }
