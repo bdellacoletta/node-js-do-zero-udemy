@@ -15,4 +15,9 @@ function mostrar_dados(){
   console.log("---------------");
 }
 
-mostrar_dados();
+function add_valor(valor) {
+  valor_em_conta += valor
+  console.log(`valor em conta: R$${valor_em_conta}`)
+}
+
+add_valor(10);
