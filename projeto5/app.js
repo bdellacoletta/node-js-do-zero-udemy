@@ -16,5 +16,11 @@ http.createServer(function(req, res) {
     res.writeHead(200, {"Content-Type": "text/css"});
     fileStream.pipe(res);
   }
+  else if(req.url.match("\.png$")){
+    var pngpath = path.join(__dirname, req.url);
+    var fileStream = fs.createReadStream(pngpath);
+    res.writeHead(200, {"Content-Type": "image/png"});
+    fileStream.pipe(res);
+  }
 
 }).listen(8080);
