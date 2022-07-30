@@ -25,4 +25,7 @@ function sub_valor(valor) {
   console.log(`valor em conta: R$ ${valor_em_conta}`);
 }
 
-sub_valor(10)
+function mudar_chave(chave) {
+  chave_pix = chave;
+  console.log(`Nova chave pix: ${chave_pix}`);
+}
