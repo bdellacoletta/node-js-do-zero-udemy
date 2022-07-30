@@ -1,13 +1,18 @@
 const http = require("http");
+const fs = require("fs");
+
+function read(file) {
+  return fs.readFileSync(file);
+}
 
 http.createServer(function(req, res){
 
   if(req.url === "/"){
-    res.write("<h1>Home</h1>");
+    res.write(read("index.html"));
     res.end
   }
   else if(req.url === "/user"){
-    res.write("<h1>Hello User</h1>");
+    res.write(read("user.html"));
     res.end
   }
 
