@@ -2,8 +2,8 @@ const fs = require("fs");
 
 var usuarios = [];
 
-function read(item, file) {
-  return item = JSON.parse(fs.readFileSync(file));
+function read(array, file) {
+  return array = JSON.parse(fs.readFileSync(file));
 }
 
 function create(array, nome, idade, valor, chave) {
@@ -13,6 +13,7 @@ function create(array, nome, idade, valor, chave) {
     "valor" : valor,
     "chave" : chave
   },);
+  update();
 }
 
 function save(file, array) {
@@ -26,10 +27,16 @@ function del(array, nome) {
       array.splice(index, 1)
     }
   }
+  update();
+}
+
+function update() {
+  save("bd.json", usuarios);
+  read(usuarios, "bd.json");
 }
 
 usuarios = read(usuarios, "bd.json")
 
-del(usuarios, "Bosco");
+del(usuarios, "teste");
 
 console.log(usuarios);

@@ -1,7 +1,4 @@
-[
-  {"nome":"Branca","idade":29,"valor":100,"chave":"branca@branca"},
-  {"nome":"Mateus","idade":29,"valor":500,"chave":"mat@mat"},
-  {"nome":"Carmen","idade":56,"valor":50,"chave":"carm@carm"},
-  {"nome":"Bosco","idade":71,"valor":800,"chave":"bdc@bdc"},
-  {"nome":"Luiza","idade":31,"valor":200,"chave":"luiza@luiza"}
-]
+[{"nome":"Branca","idade":29,"valor":100,"chave":"branca@branca"},
+{"nome":"Mateus","idade":29,"valor":500,"chave":"mat@mat"},
+{"nome":"Carmen","idade":56,"valor":50,"chave":"carm@carm"},
+{"nome":"Luiza","idade":31,"valor":200,"chave":"luiza@luiza"}]
