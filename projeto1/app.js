@@ -1,7 +1,7 @@
 var nome = "Branca";
 var idade = 29;
 var chave_pix = 12345678;
-var valor_em_conta = 0;
+var valor_em_conta = 100;
 
 function mostrar_dados(){
   console.log("---------------");
@@ -16,8 +16,13 @@ function mostrar_dados(){
 }
 
 function add_valor(valor) {
-  valor_em_conta += valor
-  console.log(`valor em conta: R$${valor_em_conta}`)
+  valor_em_conta += valor;
+  console.log(`valor em conta: R$ ${valor_em_conta}`);
 }
 
-add_valor(10);
+function sub_valor(valor) {
+  valor_em_conta -= valor;
+  console.log(`valor em conta: R$ ${valor_em_conta}`);
+}
+
+sub_valor(10)
