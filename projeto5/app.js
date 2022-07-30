@@ -22,5 +22,9 @@ http.createServer(function(req, res) {
     res.writeHead(200, {"Content-Type": "image/png"});
     fileStream.pipe(res);
   }
+  else{
+    res.writeHead(404, {"Content-Type": "text/html"});
+    res.end("<h1>Página não encontrada</h1>");
+  }
 
 }).listen(8080);
