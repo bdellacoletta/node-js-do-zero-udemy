@@ -1,3 +1,5 @@
+const read = require("readline-sync")
+
 var nome = "Branca";
 var idade = 29;
 var chave_pix = 12345678;
@@ -28,4 +30,9 @@ function sub_valor(valor) {
 function mudar_chave(chave) {
   chave_pix = chave;
   console.log(`Nova chave pix: ${chave_pix}`);
+}
+
+var loop = true;
+while (loop){
+  read.question("Escolha um número ");
 }
